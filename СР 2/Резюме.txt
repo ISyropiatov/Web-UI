@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <!-- Вказуємо кодування документа -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо масштабування відображення на різних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок вікна браузера -->
+    <title>Моє Резюме</title>
+    <!-- Стилі для вигляду резюме -->
+    <style>
+        /* Загальні стилі для тіла сторінки */
+        body {
+            font-family: Montserrat, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Стилі для блоку резюме */
+        .resume {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Стилі для лівої частини резюме */
+        .left-column {
+            flex: 1;
+            margin-right: 20px;
+            background-color: #1E2939;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 120vh;
+        }
+
+        /* Стилі для правої частини резюме */
+        .right-column {
+            flex: 1;
+        }
+
+        /* Стилі для заголовку */
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Стилі для контейнера з фото */
+        .photo-container {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #0c0c0c;
+        }
+
+        /* Стилі для фото в контейнері */
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Стилі для розділів у резюме */
+        .section {
+            margin-bottom: 15px;
+        }
+
+        /* Стилі для заголовків розділів */
+        .section h2 {
+            color: #007bff;
+            text-align: left;
+        }
+
+        /* Стилі для білого тексту */
+        .white-text {
+            color: white;
+        }
+
+        /* Медіа-запит для реакції на розмір екрану 600px і менше */
+        @media screen and (max-width: 600px) {
+            .resume {
+                flex-direction: column;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Блок резюме -->
+    <div class="resume">
+        <!-- Ліва частина резюме -->
+        <div class="left-column">
+            <!-- Заголовок і фото -->
+            <div class="header">
+                <!-- Контейнер для фото -->
+                <div class="photo-container">
+                    <!-- Фото -->
+                    <img src="C:\Users\Igor2\Desktop\Web Диз\СР 2\photo.png" alt="Моє фото">
+                </div>
+                <!-- Особисті дані -->
+                <div class="section">
+                    <h2 class="white-text">Особисті Дані</h2>
+                    <div class="section">
+                        <h3 class="white-text">Номер телефону</h3>
+                        <p class="white-text">+380968037320</p>
+                    </div>
+                    <div class="section">
+                        <h3 class="white-text">Пошта</h3>
+                        <p class="white-text">ihor2506@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Технічні навички -->
+                <div class="section">
+                    <h2 class="white-text">Технічні навички</h2>
+                    <ul class="white-text">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>C#</li>
+                        <li>Java Script</li>
+                        <li>Python</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <!-- Soft Skills -->
+                <div class="section">
+                    <h2 class="white-text">Soft Skills</h2>
+                    <ul class="white-text">
+                        <li>Комунікабельний</li>
+                        <li>Відповідальний</li>
+                        <li>Командна робота</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Права частина резюме -->
+        <div class="right-column">
+            <!-- Заголовок і текст про себе -->
+            <div class="header">
+                <h1>Ігор Сиропятов</h1>
+                <p>Мене звати Ігор. Мені 23 роки. Зараз навчаюся в ДТЕУ, Державний торговельно-економічний університет на програміста інформаційних технологій. Працюю на посаді HR-Manager у компанії IT-Svit.</p>
+            </div>
+            <!-- Досвід роботи -->
+            <div class="section">
+                <h2>Досвід роботи</h2>
+                <h3>HR-Manager у компанії <span class="orange-text">IT-Svit</span></h3>
+                <p>Червень 2022 - по зараз | Україна</p>
+                <ul>
+                    <li>Пошук, відбір і найм нових працівників.</li>
+                    <li>Проведення співбесід та відбір кандидатів.</li>
+                    <li>Розробка та впровадження систем оцінювання працівників.</li>
+                    <li>Розробка та оновлення внутрішніх політик та процедур компанії щодо персоналу.</li>
+                </ul>
+                <h3>SMM-Manager у компанії <span class="orange-text">СoffeeLove</span></h3>
+                <p>Квітень 2021 - Серпень 2021 | Україна</p>
+                <ul>
+                    <li>Розробка та впровадження стратегій маркетингу.</li>
+                    <li>Створення креативного контенту для соціальних мереж.</li>
+                    <li>Взаємодія з гостями через соціальні мережі.</li>
+                </ul>
+                <h3>Фрілансер</h3>
+                <p>Червень 2018 - Лютий 2020 | Україна</p>
+                <ul>
+                    <li>Розробка Веб-дизайну.</li>
+                    <li>Створення логотипів та інших поліграфічних матеріалів.</li>
+                    <li>Верстка та створення поліграфічної продукції.</li>
+                </ul>
+            </div>
+            <!-- Освіта -->
+            <div class="section">
+                <h2>Освіта</h2>
+                <h3><span class="orange-text">Державний Торговельно-Економічний Університет</span></h3>
+                <p>Інформаційні Технології</p>
+                <p>Вересень 2020 - по зараз | Україна</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
